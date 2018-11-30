@@ -1,0 +1,30 @@
+<ion-content class="cards-bg">
+  <h1 class="margin-top" i18n text-center>LiveShow</h1>
+
+  <ion-card>
+    <ion-card-content>
+      <ion-row text-center>
+        <ion-col col-6 padding (click)="facebookLogin()">
+          <ion-row>
+            <ion-col col-1>
+              <ion-icon class="blue" name="logo-facebook"></ion-icon>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            Login with Facebook
+          </ion-row>
+        </ion-col>
+        <ion-col col-6 padding (click)="guestLogin()">
+          <ion-row>
+            <ion-col col-1>
+              <ion-icon name="md-contact"></ion-icon>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            Continue as guest
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

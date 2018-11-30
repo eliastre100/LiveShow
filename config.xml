@@ -82,9 +82,11 @@
     <plugin name="cordova-plugin-splashscreen" spec="5.0.2" />
     <plugin name="cordova-plugin-ionic-webview" spec="^2.0.0" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
-    <plugin name="cordova-plugin-facebook" spec="0.2.2">
-        <variable name="FACEBOOK_APP_ID" value="290607834898495" />
-        <variable name="FACEBOOK_DISPLAY_NAME" value="LiveShow" />
+    <plugin name="cordova-plugin-facebook4" spec="3.2.0">
+        <variable name="APP_ID" value="290607834898495" />
+        <variable name="APP_NAME" value="LiveShow" />
+        <variable name="FACEBOOK_ANDROID_SDK_VERSION" value="4.38.1" />
     </plugin>
     <engine name="android" spec="7.1.4" />
+    <engine name="browser" spec="5.0.4" />
 </widget>
