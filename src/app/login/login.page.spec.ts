@@ -45,7 +45,7 @@ describe('LoginPage', () => {
 
         it ('should redirect to the home page', () => {
             component.login('test');
-            expect(routerProvider.navigate).toHaveBeenCalledWith(['/home']);
+            expect(routerProvider.navigate).toHaveBeenCalledWith(['/tabs']);
         });
     });
 });

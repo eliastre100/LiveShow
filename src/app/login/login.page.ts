@@ -38,6 +38,6 @@ export class LoginPage implements OnInit {
 
     login(id: string) {
         this.userService.login(id);
-        this.router.navigate(['/home']);
+        this.router.navigate(['/tabs']);
     }
 }
