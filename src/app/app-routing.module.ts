@@ -24,7 +24,9 @@ export const routes: Routes = [
                 outlet: 'home',
                 component: HomePage
             }]
-    }];
+    },
+    { path: 'about', loadChildren: './about/about.module#AboutPageModule' }
+];
 
 @NgModule({
     imports: [RouterModule.forRoot(routes)],
