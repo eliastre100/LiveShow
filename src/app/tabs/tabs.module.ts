@@ -6,13 +6,15 @@ import { IonicModule } from '@ionic/angular';
 
 import { TabsPage } from './tabs.page';
 import {HomePageModule} from '../home/home.module';
+import {ContactPageModule} from '../contact/contact.module';
 
 @NgModule({
     imports: [
         IonicModule,
         CommonModule,
         FormsModule,
-        HomePageModule
+        HomePageModule,
+        ContactPageModule
     ],
     declarations: [TabsPage]
 })
