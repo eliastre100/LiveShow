@@ -1,7 +1,9 @@
 import { Injectable } from '@angular/core';
 import {UserService} from './user.service';
+import { Storage } from '@ionic/storage';
 
-interface Event {name: string, venue: string, date: number}
+
+interface Event {name: string;  venue: string; date: number; }
 
 @Injectable({
   providedIn: 'root'
@@ -15,7 +17,7 @@ export class EventsService {
   }
 
   async add(event: Event) {
-    const current_events = await this.storageService.get(this.userServcice.getUser());
+    const current_events = await this.storageService.get(this.userServcice.getUser()) || [];
     console.log(current_events);
     this.storageService.set(this.userServcice.getUser(), current_events.concat([event]));
   }

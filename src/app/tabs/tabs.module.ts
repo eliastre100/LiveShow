@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { TabsPage } from './tabs.page';
 import {HomePageModule} from '../home/home.module';
 import {ContactPageModule} from '../contact/contact.module';
+import {EventsPageModule} from '../events/events.module';
 
 @NgModule({
     imports: [
@@ -14,7 +15,8 @@ import {ContactPageModule} from '../contact/contact.module';
         CommonModule,
         FormsModule,
         HomePageModule,
-        ContactPageModule
+        ContactPageModule,
+        EventsPageModule
     ],
     declarations: [TabsPage]
 })

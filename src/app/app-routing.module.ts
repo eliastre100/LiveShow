@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import {TabsPage} from './tabs/tabs.page';
 import {HomePage} from './home/home.page';
 import {ContactPage} from './contact/contact.page';
+import {EventsPage} from './events/events.page';
 
 export const routes: Routes = [
     {
@@ -29,7 +30,13 @@ export const routes: Routes = [
                 path: 'contact',
                 outlet: 'contact',
                 component: ContactPage
-            }]
+            },
+            {
+                path: 'events',
+                outlet: 'events',
+                component: EventsPage
+            }
+        ]
     },
     { path: 'about', loadChildren: './about/about.module#AboutPageModule' },
 ];
