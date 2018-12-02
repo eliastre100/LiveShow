@@ -41,6 +41,7 @@ export const routes: Routes = [
     { path: 'about', loadChildren: './about/about.module#AboutPageModule' },
   { path: 'new_event', loadChildren: './new-event/new-event.module#NewEventPageModule' },
   { path: 'cleanup', loadChildren: './cleanup/cleanup.module#CleanupPageModule' },
+  { path: 'logout', loadChildren: './logout/logout.module#LogoutPageModule' },
 ];
 
 @NgModule({
