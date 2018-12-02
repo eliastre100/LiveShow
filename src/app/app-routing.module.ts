@@ -39,6 +39,7 @@ export const routes: Routes = [
         ]
     },
     { path: 'about', loadChildren: './about/about.module#AboutPageModule' },
+  { path: 'new_event', loadChildren: './new-event/new-event.module#NewEventPageModule' },
 ];
 
 @NgModule({

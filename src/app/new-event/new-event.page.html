@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Add new event</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="add()">
+    <ion-card padding>
+      <ion-item>
+        <ion-label floating>Name</ion-label>
+        <ion-input type="text" [(ngModel)]="event.name" name="name" text-right></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Venue</ion-label>
+        <ion-input [(ngModel)]="event.venue" name="venue" text-right></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Date</ion-label>
+        <ion-datetime displayFormat="HH:mm DD/MM/YYYY" [(ngModel)]="event.date" name="date"></ion-datetime>
+      </ion-item>
+    </ion-card>
+    <button type="submit" class="submit-btn" block margin>Add Todo</button>
+  </form>
+</ion-content>
